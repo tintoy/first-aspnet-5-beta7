@@ -1,0 +1,51 @@
+<html>
+
+<head>
+	<title>It Works</title>
+	<link rel="stylesheet" href="styles/semantic.css"></link>
+	<style>
+		.dialog-root {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	</style>
+
+	<!-- TODO: Install FontAwesome! -->
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/semantic.js"></script>
+</head>
+
+<body>
+	<div class="ui middle aligned grid dialog-root">
+		<div class="column">
+			<div class="ui center aligned page grid">
+				<div class="eight wide  column">
+					<div class="ui left aligned segment">
+						 <h4 class="ui dividing header">Account Info</h4>
+
+						<div class="ui form">
+							<div class="field">
+								<label for="username">Username:</label>
+								<div class="ui icon input">
+									<input type="text" placeholder="Username" name="username" id="username" /> <i class="user icon"></i>
+
+								</div>
+							</div>
+							<div class="field">
+								<label for="password">Password:</label>
+								<div class="ui icon input">
+									<input type="password" placeholder="Password" name="password" id="password" /> <i class="lock icon"></i>
+
+								</div>
+							</div>
+							<input type="submit" name="submit" class="ui inverted blue button" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "fa7",
+  "version": "0.1.0",
+  "authors": [
+    "tintoy <tintoy@tintoy.io>"
+  ],
+  "description": "First ASP.NET 5 beta 7",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "semantic": "semantic-ui#~2.1.3"
+  }
+}
