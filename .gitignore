@@ -10,8 +10,9 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-# Node and Bower
+# Node, JSPM, and Bower
 node_modules/
+jspm_packages/
 bower_components/
 
 # Build results
