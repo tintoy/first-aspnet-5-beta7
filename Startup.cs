@@ -1,37 +1,52 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Http;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
-using Microsoft.Framework.Logging.Console;
 
-namespace fa7
+namespace FA7
 {
-    public class Startup
-    {
-        public void ConfigureServices(IServiceCollection services)
-        {
+	/// <summary>
+	///		Startup logic for FA7.
+	/// </summary>
+	public class Startup
+	{
+		/// <summary>
+		///		Configure dependency injection.
+		/// </summary>
+		/// <param name="services">
+		///		The application-level collection of injectable services.
+		/// </param>
+		public void ConfigureServices(IServiceCollection services)
+		{
 			if (services == null)
-                throw new ArgumentNullException("services");
+				throw new ArgumentNullException(nameof(services));
 
-            services.AddLogging();
-        }
+			services.AddLogging();
+		}
 
-        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
-        {
+		/// <summary>
+		///		Configure the application pipeline.
+		/// </summary>
+		/// <param name="app">
+		///		The application pipeline builder.
+		/// </param>
+		/// <param name="loggerFactory">
+		///		The logger factory service.
+		/// </param>
+		public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
+		{
 			if (app == null)
-				throw new ArgumentNullException("app");
+				throw new ArgumentNullException(nameof(app));
 
 			if (loggerFactory == null)
-                throw new ArgumentNullException("loggerFactory");
+				throw new ArgumentNullException(nameof(loggerFactory));
 
-			loggerFactory.MinimumLevel = LogLevel.Information;
-            loggerFactory.AddConsole();
+			// Serve static files.
+			app.UseFileServer();
 
-            app.UseFileServer();
-        }
-    }
+			// Meh, log to console.
+			loggerFactory.MinimumLevel = LogLevel.Warning;
+			loggerFactory.AddConsole();
+		}
+	}
 }
