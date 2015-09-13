@@ -1,13 +1,23 @@
 <html>
-
 <head>
 	<title>It Works</title>
 	<link rel="stylesheet" href="styles/semantic.css" />
-
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/semantic.js"></script>
-</head>
 
+	<style>
+		body > .grid.splash {
+		  height: 100%;
+		}
+		body > .grid.splash > .column {
+		  max-width: 90%;
+		  height: 90%
+		}
+		body > .grid.splash > .column > .ui.segment {
+		  height: 100%
+		}
+	</style>
+</head>
 <body aurelia-app="app/main">
 	<script src="jspm_packages/system.js"></script>
 	<script src="config.js"></script>
@@ -15,18 +25,14 @@
 		System.import("aurelia-bootstrapper");
 	</script>
 
-	<div class="ui middle aligned twelve column grid">
-		<div class="row">
-			<div class="two wide column">
-			</div>
-			<div class="eleven wide column">
-				<h2 class="ui header">
-					<i class="spinner icon"></i> Loading...
-				</h2>
+	<div class="ui middle aligned center aligned splash grid">
+		<div class="column">
+			<div class="ui segment">
+				<div class="ui active dimmer">
+					<div class="ui text loader">Loading</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	
 </body>
-
 </html>
