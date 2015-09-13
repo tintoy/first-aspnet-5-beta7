@@ -1,0 +1,109 @@
+<html>
+
+<head>
+	<title>It Works</title>
+	<link rel="stylesheet" href="styles/semantic.css"></link>
+	
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/semantic.js"></script>
+</head>
+
+<body>
+	<div class="ui middle aligned center aligned grid container">
+		<div class="column">
+			<div class="ui segment">
+				<div class="ui left aligned container">
+					<div class="ui steps centered">
+						<div class="step">
+							<i class="smile icon"></i>
+							<div class="content">
+								<div class="title">Introduction</div>
+								<div class="description">
+									Welcome one two three
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<i class="database icon"></i>
+							<div class="content">
+								<div class="title">Database connections</div>
+								<div class="description">
+									Configure database connections
+								</div>
+							</div>
+						</div>
+						<div class="active step">
+							<i class="configure icon"></i>
+							<div class="content">
+								<div class="title">Optional settings</div>
+								<div class="description">
+									Configure additional settings.
+								</div>
+							</div>
+						</div>
+						<div class="disabled step">
+							<i class="power icon"></i>
+							<div class="content">
+								<div class="title">Configure</div>
+								<div class="description">
+									Apply your configuration
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="ui form" role="form">
+						<h4 class="ui dividing header">Optional settings</h4>
+						<p>
+							There are a couple of other settings that the developer runtime can configure for you:
+						</p>
+						<div class="ui grid" style="margin-top: 25px">
+							<div class="row">
+								<div class="left aligned nine wide column">
+									<div class="ui stacked segment">
+										<div class="field">
+											<label>Identity</label>
+											<div class="ui action input">
+												<input type="text" name="IdentityConnectionString" placeholder="Identity database connection string">
+												<div class="ui button">...</button>
+											</div>
+										</div>
+										<div class="field">
+											<label>DMS</label>
+											<div class="ui action input">
+												<input type="text" name="DmsConnectionString" placeholder="DMS database connection string">
+												<div class="ui button">...</button>
+											</div>
+										</div>
+										<div class="field">
+											<label>Provisioning</label>
+											<div class="ui action input">
+												<input type="text" name="ProvisioningConnectionString" placeholder="Provisioning database connection string">
+												<div class="ui button">...</button>
+											</div>
+										</div>
+										<div class="field">
+											<label>Auditing</label>
+											<div class="ui action input">
+												<input type="text" name="AuditingonnectionString" placeholder="Auditing database connection string">
+												<div class="ui button">...</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="right aligned nine wide column">
+									<a class="ui button" href="wizard-1.html"><i class="left arrow icon"></i> Back</a>
+									<a class="ui submit button" href="wizard-3.html">Next <i class="right arrow icon"></i></a>
+									<a class="ui button" href="wizard-4.html">Finish&nbsp;&nbsp;&nbsp;<i class="fast forward icon"></i></a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
