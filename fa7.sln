@@ -5,8 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "fa7", "fa7.xproj", "{4CE8F31E-3FD7-4B75-88AB-14F48D2CEB35}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC7EEEF3-624D-457D-A716-45527F4164D5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DC7EEEF3-624D-457D-A716-45527F4164D5}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
 	EndProjectSection
 EndProject
