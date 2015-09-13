@@ -9,99 +9,84 @@
 </head>
 
 <body>
-	<div class="ui middle aligned center aligned grid container">
-		<div class="column">
-			<div class="ui segment">
-				<div class="ui left aligned container">
-					<div class="ui steps centered">
-						<div class="step">
-							<i class="smile icon"></i>
+	<div class="ui middle aligned twelve column grid">
+		<div class="row">
+			<div class="two wide column"></div>
+			<div class="eleven wide column">
+				<div class="ui steps">
+					<div class="step">
+						<i class="smile icon"></i>
+						<a href="wizard-1.html">
 							<div class="content">
-								<div class="title">Introduction</div>
+								<div class="title">Welcome</div>
 								<div class="description">
-									Welcome one two three
+									Introduction
 								</div>
 							</div>
-						</div>
-						<div class="step">
-							<i class="database icon"></i>
+						</a>
+					</div>
+					<div class="step">
+						<i class="database icon"></i>
+						<a href="wizard-2.html">
 							<div class="content">
 								<div class="title">Database connections</div>
 								<div class="description">
 									Configure database connections
 								</div>
 							</div>
-						</div>
-						<div class="active step">
-							<i class="configure icon"></i>
+						</a>
+					</div>
+					<div class="active step">
+						<i class="configure icon"></i>
+						<a href="wizard-3.html">
 							<div class="content">
 								<div class="title">Optional settings</div>
 								<div class="description">
-									Configure additional settings.
+									Other settings.
 								</div>
 							</div>
-						</div>
-						<div class="disabled step">
-							<i class="power icon"></i>
+						</a>
+					</div>
+					<div class="step">
+						<i class="power icon"></i>
+						<a href="wizard-4.html">
 							<div class="content">
 								<div class="title">Configure</div>
 								<div class="description">
-									Apply your configuration
+									Apply configuration
 								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="two wide column">
+			</div>
+			<div class="eleven wide column">
+				<form class="ui form" role="form">
+					<h4 class="ui dividing header">Additional options</h4>
+					<p>
+						There are a couple of other things we can configure for you.
+					</p>
+					<div class="ui grid" style="margin-top: 25px">
+						<div class="row">
+							<div class="left aligned nine wide column">
+								<div style="height: 305px"></div>
+							</div>
+						</div>
+						<div class="right aligned row">
+							<div class="nine wide column">
+								<a class="ui button" href="wizard-2.html"><i class="left arrow icon"></i> Back</a>
+								<a class="ui submit button" href="wizard-3.html">Next <i class="right arrow icon"></i></a>
+								<a class="ui button" href="wizard-3.html">Finish&nbsp;&nbsp;&nbsp;<i class="fast forward icon"></i></a>
 							</div>
 						</div>
 					</div>
-					<form class="ui form" role="form">
-						<h4 class="ui dividing header">Optional settings</h4>
-						<p>
-							There are a couple of other settings that the developer runtime can configure for you:
-						</p>
-						<div class="ui grid" style="margin-top: 25px">
-							<div class="row">
-								<div class="left aligned nine wide column">
-									<div class="ui stacked segment">
-										<div class="field">
-											<label>Identity</label>
-											<div class="ui action input">
-												<input type="text" name="IdentityConnectionString" placeholder="Identity database connection string">
-												<div class="ui button">...</button>
-											</div>
-										</div>
-										<div class="field">
-											<label>DMS</label>
-											<div class="ui action input">
-												<input type="text" name="DmsConnectionString" placeholder="DMS database connection string">
-												<div class="ui button">...</button>
-											</div>
-										</div>
-										<div class="field">
-											<label>Provisioning</label>
-											<div class="ui action input">
-												<input type="text" name="ProvisioningConnectionString" placeholder="Provisioning database connection string">
-												<div class="ui button">...</button>
-											</div>
-										</div>
-										<div class="field">
-											<label>Auditing</label>
-											<div class="ui action input">
-												<input type="text" name="AuditingonnectionString" placeholder="Auditing database connection string">
-												<div class="ui button">...</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="right aligned nine wide column">
-									<a class="ui button" href="wizard-1.html"><i class="left arrow icon"></i> Back</a>
-									<a class="ui submit button" href="wizard-3.html">Next <i class="right arrow icon"></i></a>
-									<a class="ui button" href="wizard-4.html">Finish&nbsp;&nbsp;&nbsp;<i class="fast forward icon"></i></a>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
+				</form>
 			</div>
+		</div>
 		</div>
 	</div>
 </body>

@@ -9,89 +9,98 @@
 </head>
 
 <body>
-	<div class="ui middle aligned center aligned grid container">
-		<div class="column">
-			<div class="ui segment">
-				<div class="ui left aligned container">
-					<div class="ui steps centered">
-						<div class="active step">
-							<i class="smile icon"></i>
+	<div class="ui middle aligned twelve column grid">
+		<div class="row">
+			<div class="two wide column"></div>
+			<div class="eleven wide column">
+				<div class="ui steps">
+					<div class="active step">
+						<i class="smile icon"></i>
+						<a href="wizard-1.html">
 							<div class="content">
-								<div class="title">Introduction</div>
+								<div class="title">Welcome</div>
 								<div class="description">
-									Welcome one two three
+									Introduction
 								</div>
 							</div>
-						</div>
-						<div class="disabled step">
-							<i class="database icon"></i>
+						</a>
+					</div>
+					<div class="step">
+						<i class="database icon"></i>
+						<a href="wizard-2.html">
 							<div class="content">
 								<div class="title">Database connections</div>
 								<div class="description">
 									Configure database connections
 								</div>
 							</div>
-						</div>
-						<div class="disabled step">
-							<i class="configure icon"></i>
-							<div class="content">
-								<div class="title">Optional settings</div>
-								<div class="description">
-									Configure additional settings.
-								</div>
-							</div>
-						</div>
-						<div class="disabled step">
-							<i class="power icon"></i>
-							<div class="content">
-								<div class="title">Configure</div>
-								<div class="description">
-									Apply your configuration
-								</div>
+						</a>
+					</div>
+					<div class="disabled step">
+						<i class="configure icon"></i>
+						<div class="content">
+							<div class="title">Optional settings</div>
+							<div class="description">
+								Other settings.
 							</div>
 						</div>
 					</div>
-					<form class="ui form" role="form">
-						<h4 class="ui dividing header">Welcome to the Platform developer runtime</h4>
-						<p>
-							This wizard will walk you through the steps required to configure (or reconfigure) the Cloud Services Platform on your machine.
-						</p>
-						<p>
-							System Requirements:
-							<ul>
-								<li>
-									Windows 8.x (the developer runtime may work on Windows 7, but it's not officially supported).
-								</li>
-								<li>
-									Powershell 4 or higher (this is required by the Aperture Powershell module).
-								</li>
-							</ul>
-						</p>
-						<p>
-							Please ensure that you have already installed:
-							<ul>
-								<li>
-									<a href="http://hibernatingrhinos.com/downloads/RavenDB%20Installer/3690">RavenDB 3.x</a>
-								</li>
-								<li>
-									<a href="http://getseq.net/">Seq</a>
-								</li>
-								<li>
-									<a href="https://proget.gmgmt.dimensiondata.com/feeds/ApertureDeploy-R2.0/Aperture.MicrosoftSemanticLoggingService">Semantic Logging Service</a>
-								</li>
-							</ul>
-						</p>
-						<div class="ui grid" style="margin-top: 175px">
-							<div class="row">
-								<div class="right aligned nine wide column">
-									<button class="ui button disabled"><i class="left arrow icon"></i> Back</button>
-									<a class="ui submit button" href="wizard-2.html">Next <i class="right arrow icon"></i></a>
-									<button class="ui button disabled">Finish&nbsp;&nbsp;&nbsp;<i class="fast forward icon"></i></button>
-								</div>
+					<div class="disabled step">
+						<i class="power icon"></i>
+						<div class="content">
+							<div class="title">Configure</div>
+							<div class="description">
+								Apply configuration
 							</div>
 						</div>
-					</form>
+					</div>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="two wide column">
+			</div>
+			<div class="eleven wide column">
+				<form class="ui form" role="form">
+					<h4 class="ui dividing header">Welcome to the Platform developer runtime</h4>
+					<p>
+						This wizard will walk you through the steps required to configure (or reconfigure) the Cloud Services Platform on your machine.
+					</p>
+					<p>
+						System Requirements:
+						<ul>
+							<li>
+								Windows 8.x (the developer runtime may work on Windows 7, but it's not officially supported).
+							</li>
+							<li>
+								Powershell 4 or higher (this is required by the Aperture Powershell module).
+							</li>
+						</ul>
+					</p>
+					<p>
+						Please ensure that you have already installed:
+						<ul>
+							<li>
+								<a href="http://hibernatingrhinos.com/downloads/RavenDB%20Installer/3690">RavenDB 3.x</a>
+							</li>
+							<li>
+								<a href="http://getseq.net/">Seq</a>
+							</li>
+							<li>
+								<a href="https://proget.gmgmt.dimensiondata.com/feeds/ApertureDeploy-R2.0/Aperture.MicrosoftSemanticLoggingService">Semantic Logging Service</a>
+							</li>
+						</ul>
+					</p>
+					<div class="ui grid" style="margin-top: 165px">
+						<div class="right aligned row">
+							<div class="nine wide column">
+								<button class="ui button disabled"><i class="left arrow icon"></i> Back</button>
+								<a class="ui submit button" href="wizard-2.html">Next <i class="right arrow icon"></i></a>
+								<button class="ui button disabled">Finish&nbsp;&nbsp;&nbsp;<i class="fast forward icon"></i></button>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
